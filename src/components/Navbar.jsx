@@ -22,16 +22,16 @@ const Navbar = () => {
               </svg>
             </div>
             <ul
-              tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
             >
               
-                <li><a href="">Home</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Changelog</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Download</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a  href="">Home</a></li>
+                <li><a  href="">FAQ</a></li>
+                <li><a  href="">Changelog</a></li>
+                <li><a  href="">Blog</a></li>
+                <li><a  href="">Download</a></li>
+                <li><a  href="">Contact</a></li>
             </ul>
           </div>
           <a className="text-xl font-bold">CS — Ticket System</a>
@@ -39,12 +39,12 @@ const Navbar = () => {
 
         <div className="navbar-end">
             <ul className="gap-5 hidden lg:flex ">
-                <li><a href="">Home</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Changelog</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Download</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a className="hover:text-primary transition-colors duration-200" href="">Home</a></li>
+                <li><a className="hover:text-primary transition-colors duration-200" href="">FAQ</a></li>
+                <li><a className="hover:text-primary transition-colors duration-200" href="">Changelog</a></li>
+                <li><a className="hover:text-primary transition-colors duration-200" href="">Blog</a></li>
+                <li><a className="hover:text-primary transition-colors duration-200" href="">Download</a></li>
+                <li><a className="hover:text-primary transition-colors duration-200" href="">Contact</a></li>
             </ul>
           <a className="btn btn-primary ml-5">+ New Ticket</a>
         </div>

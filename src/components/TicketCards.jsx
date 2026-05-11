@@ -3,7 +3,7 @@ import TicketCard from "./TicketCard";
 const TicketCards = ({tasks, taskInProgress, setTaskInProgress, handleAddTask}) => {
   return (
     <div>
-      <div className="grid grid-cols-2 grid-rows-6 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {
           tasks?.map((ticket) => 
           <TicketCard 
