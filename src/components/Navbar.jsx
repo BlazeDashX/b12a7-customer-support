@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="max-w-300 mx-auto mt-4">
+    <div className="max-w-7xl mx-auto">
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">

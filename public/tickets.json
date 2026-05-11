@@ -6,7 +6,7 @@
     "customer": "Acme Corp",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2026-05-01T09:15:00Z"
+    "createdAt": "01/05/2026"
   },
   {
     "id": "TCK-1002",
@@ -15,7 +15,7 @@
     "customer": "Bright Solutions",
     "priority": "Critical",
     "status": "In Progress",
-    "createdAt": "2026-05-02T11:20:00Z"
+    "createdAt": "02/05/2026"
   },
   {
     "id": "TCK-1003",
@@ -23,8 +23,8 @@
     "description": "Customers cannot upload profile pictures larger than 2MB.",
     "customer": "NovaTech",
     "priority": "Medium",
-    "status": "Resolved",
-    "createdAt": "2026-05-03T08:45:00Z"
+    "status": "In Progress",
+    "createdAt": "03/05/2026"
   },
   {
     "id": "TCK-1004",
@@ -33,7 +33,7 @@
     "customer": "BlueWave Inc",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2026-05-03T14:10:00Z"
+    "createdAt": "03/05/2026"
   },
   {
     "id": "TCK-1005",
@@ -42,7 +42,7 @@
     "customer": "Zenith Group",
     "priority": "Medium",
     "status": "In Progress",
-    "createdAt": "2026-05-04T10:30:00Z"
+    "createdAt": "04/05/2026"
   },
   {
     "id": "TCK-1006",
@@ -51,7 +51,7 @@
     "customer": "Skyline Retail",
     "priority": "Critical",
     "status": "Open",
-    "createdAt": "2026-05-05T07:55:00Z"
+    "createdAt": "05/05/2026"
   },
   {
     "id": "TCK-1007",
@@ -59,8 +59,8 @@
     "description": "Product search takes more than 10 seconds to return results.",
     "customer": "Global Mart",
     "priority": "Low",
-    "status": "Pending",
-    "createdAt": "2026-05-05T13:40:00Z"
+    "status": "Open",
+    "createdAt": "05/05/2026"
   },
   {
     "id": "TCK-1008",
@@ -69,7 +69,7 @@
     "customer": "DataSync Ltd",
     "priority": "High",
     "status": "In Progress",
-    "createdAt": "2026-05-06T09:05:00Z"
+    "createdAt": "06/05/2026"
   },
   {
     "id": "TCK-1009",
@@ -77,8 +77,8 @@
     "description": "The FAQ section contains links returning 404 errors.",
     "customer": "EduCore",
     "priority": "Low",
-    "status": "Resolved",
-    "createdAt": "2026-05-07T15:25:00Z"
+    "status": "In Progress",
+    "createdAt": "07/05/2026"
   },
   {
     "id": "TCK-1010",
@@ -87,7 +87,7 @@
     "customer": "Prime Solutions",
     "priority": "Critical",
     "status": "Open",
-    "createdAt": "2026-05-08T12:00:00Z"
+    "createdAt": "08/05/2026"
   },
   {
     "id": "TCK-1011",
@@ -95,8 +95,8 @@
     "description": "Meeting schedules are displayed in the wrong timezone for EU users.",
     "customer": "Orbit Systems",
     "priority": "Medium",
-    "status": "Pending",
-    "createdAt": "2026-05-09T08:50:00Z"
+    "status": "Open",
+    "createdAt": "09/05/2026"
   },
   {
     "id": "TCK-1012",
@@ -104,7 +104,7 @@
     "description": "Users receive an error when exporting reports to CSV format.",
     "customer": "NextGen Analytics",
     "priority": "High",
-    "status": "Resolved",
-    "createdAt": "2026-05-10T16:45:00Z"
+    "status": "In Progress",
+    "createdAt": "10/05/2026"
   }
 ]
