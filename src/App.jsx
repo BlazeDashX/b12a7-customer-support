@@ -40,6 +40,9 @@ const handleCompleteTask = (t) => {
   setTaskInProgress(updatedInProgress);
   setResolvedTask([...resolvedTask, t]);
 };
+const handleAddTask = (newTask) => {
+  setTaskInProgress([...taskInProgress, newTask]);
+};
 
   return (
     <>
@@ -54,6 +57,7 @@ const handleCompleteTask = (t) => {
               ticketsPromise={ticketsPromise}
                taskInProgress={taskInProgress}
               setTaskInProgress={setTaskInProgress}
+              handleAddTask={handleAddTask}
               ></TicketCards>
             </Suspense>
           </div>

@@ -1,7 +1,9 @@
 import calendarImg from "../assets/calendar.png";
-const TicketCard = ({ ticket }) => {
+const TicketCard = ({ ticket, handleAddTask }) => {
   return (
-    <div className="w-full rounded-xl bg-white p-5 shadow-sm border border-gray-100">
+    <div 
+    onClick={() => handleAddTask(ticket)}
+    className="w-full rounded-xl bg-white p-5 shadow-sm border border-gray-100 cursor-pointer hover:shadow-xl transition-shadow duration-200">
       <div className="mb-4 flex items-start justify-between">
         <div>
           <h2 className="text-xl font-semibold text-[#1E293B]">
