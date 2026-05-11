@@ -1,6 +1,6 @@
 import leftImg from "../assets/vector1.png";
 
-const Hero = () => {
+const Hero = ({taskInProgress}) => {
   return (
     <div className="flex gap-5 pt-15">
       <div className="relative h-64 flex-1 overflow-hidden rounded-xl bg-linear-to-r from-[#7038E0] to-[#9F5CF0]">
@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
 
           <span className="text-6xl font-bold text-white">
-            0
+            {taskInProgress?.length}
           </span>
         </div>
       </div>

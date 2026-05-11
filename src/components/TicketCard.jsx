@@ -13,7 +13,7 @@ const TicketCard = ({ ticket }) => {
           </p>
         </div>
 
-        <div
+        <div 
           className={`${ticket.status === "Open" ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"} flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap`}
         >
           <span
