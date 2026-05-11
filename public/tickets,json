@@ -1,0 +1,110 @@
+[
+  {
+    "id": "TCK-1001",
+    "title": "Login page not loading",
+    "description": "Users are unable to access the login page after the latest deployment.",
+    "customer": "Acme Corp",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-01T09:15:00Z"
+  },
+  {
+    "id": "TCK-1002",
+    "title": "Payment gateway timeout",
+    "description": "Payment requests are timing out during checkout.",
+    "customer": "Bright Solutions",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-05-02T11:20:00Z"
+  },
+  {
+    "id": "TCK-1003",
+    "title": "Profile image upload issue",
+    "description": "Customers cannot upload profile pictures larger than 2MB.",
+    "customer": "NovaTech",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-05-03T08:45:00Z"
+  },
+  {
+    "id": "TCK-1004",
+    "title": "Dashboard data mismatch",
+    "description": "Sales reports on the dashboard are showing incorrect totals.",
+    "customer": "BlueWave Inc",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-03T14:10:00Z"
+  },
+  {
+    "id": "TCK-1005",
+    "title": "Email notifications delayed",
+    "description": "System email notifications are delayed by several hours.",
+    "customer": "Zenith Group",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-05-04T10:30:00Z"
+  },
+  {
+    "id": "TCK-1006",
+    "title": "Mobile app crashes on launch",
+    "description": "Android users report crashes immediately after opening the app.",
+    "customer": "Skyline Retail",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2026-05-05T07:55:00Z"
+  },
+  {
+    "id": "TCK-1007",
+    "title": "Search functionality slow",
+    "description": "Product search takes more than 10 seconds to return results.",
+    "customer": "Global Mart",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2026-05-05T13:40:00Z"
+  },
+  {
+    "id": "TCK-1008",
+    "title": "API authentication failure",
+    "description": "Third-party integrations are failing due to token validation errors.",
+    "customer": "DataSync Ltd",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-05-06T09:05:00Z"
+  },
+  {
+    "id": "TCK-1009",
+    "title": "Broken link in help center",
+    "description": "The FAQ section contains links returning 404 errors.",
+    "customer": "EduCore",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-05-07T15:25:00Z"
+  },
+  {
+    "id": "TCK-1010",
+    "title": "Subscription renewal failed",
+    "description": "Recurring billing is not processing for monthly subscribers.",
+    "customer": "Prime Solutions",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2026-05-08T12:00:00Z"
+  },
+  {
+    "id": "TCK-1011",
+    "title": "Incorrect timezone display",
+    "description": "Meeting schedules are displayed in the wrong timezone for EU users.",
+    "customer": "Orbit Systems",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2026-05-09T08:50:00Z"
+  },
+  {
+    "id": "TCK-1012",
+    "title": "Export to CSV not working",
+    "description": "Users receive an error when exporting reports to CSV format.",
+    "customer": "NextGen Analytics",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2026-05-10T16:45:00Z"
+  }
+]
