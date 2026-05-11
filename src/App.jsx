@@ -15,7 +15,7 @@ const ticketsPromise = fetchTickets();
 function App() {
   const [tasks, setTasks] = useState([]);
   const [taskInProgress, setTaskInProgress] = useState([]);
-  const [resolveTask,setResolveTask] = useState([]);
+  const [resolvedTask,setResolvedTask] = useState([]);
 
 useEffect(() => {
   const loadData = async () => {
@@ -38,14 +38,14 @@ const handleCompleteTask = (t) => {
   );
 
   setTaskInProgress(updatedInProgress);
-  setResolveTask([...resolveTask, t]);
+  setResolvedTask([...resolvedTask, t]);
 };
 
   return (
     <>
       <Navbar></Navbar>
       <div className="max-w-7xl mx-auto ">
-        <Hero taskInProgress={taskInProgress} resolveTask={resolveTask} ></Hero>
+        <Hero taskInProgress={taskInProgress} resolveTask={resolvedTask} ></Hero>
         <div className="grid grid-cols-9 gap-8 mt-15">
           <div className="col-span-7">
             <h2 className="font-semibold text-2xl mb-5">Customer Tickets</h2>
@@ -68,8 +68,9 @@ const handleCompleteTask = (t) => {
               </TaskStatusCard>
             </div>
             <div>
-              <h2 className="font-semibold text-2xl mb-5">Resolved Tasks</h2>
+              <h2 className="font-semibold text-2xl mb-2">Resolved Tasks</h2>
             <ResolvedTask
+            resolvedTask={resolvedTask}
             >
             </ResolvedTask>
             </div>

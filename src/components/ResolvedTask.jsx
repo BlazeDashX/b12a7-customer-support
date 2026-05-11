@@ -1,15 +1,17 @@
-const ResolveTask = () => {
+const ResolvedTask = ({resolvedTask}) => {
   return (
     <div>
-      <h2>Resolved Task</h2>
-      <p>
-        "id": "TCK-1011", "title": "Incorrect timezone display", "description":
-        "Meeting schedules are displayed in the wrong timezone for EU users.",
-        "customer": "Orbit Systems", "priority": "Medium", "status": "open",
-        "createdAt": "2026-05-09T08:50:00Z"
-      </p>
+      {resolvedTask.length> 0 ? (
+        resolvedTask?.map((task, index) => (
+          <div key={index} className="p-4 mb-4 bg-[#e1e6ff] rounded shadow-lg">
+            <p className="pb-2 font-semibold">{task.title || task.name || `Task ${index + 1}`}</p>
+          </div>
+        ))
+      ) : (
+        <p className="text-gray-500">No resolved tasks yet. </p>
+      )}
     </div>
   );
 };
 
-export default ResolveTask;
+export default ResolvedTask;
