@@ -1,14 +1,11 @@
-import { use } from "react";
 import TicketCard from "./TicketCard";
 
-const TicketCards = ({ticketsPromise, taskInProgress, setTaskInProgress, handleAddTask}) => {
-  const ticketData = use(ticketsPromise);
-  
+const TicketCards = ({tasks, taskInProgress, setTaskInProgress, handleAddTask}) => {
   return (
     <div>
       <div className="grid grid-cols-2 grid-rows-6 gap-5">
         {
-          ticketData?.map((ticket) => 
+          tasks?.map((ticket) => 
           <TicketCard 
           key={ticket.id} 
           ticket={ticket}
