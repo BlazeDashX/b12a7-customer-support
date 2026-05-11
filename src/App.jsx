@@ -2,8 +2,8 @@ import Navbar from "./components/Navbar";
 import { Suspense, useState,useEffect } from "react";
 import Hero from "./components/Hero";
 import TicketCards from "./components/TicketCards";
-import TaskCard from "./components/TaskCard";
-import ResolveTask from "./components/ResolveTask";
+import TaskStatusCard from "./components/TaskStatus";
+import ResolvedTask from "./components/ResolvedTask";
 import "./App.css";
 
 const fetchTickets = async () => {
@@ -11,25 +11,22 @@ const fetchTickets = async () => {
   return res.json();
 };
 const ticketsPromise = fetchTickets();
-
 function App() {
   const [tasks, setTasks] = useState([]);
   const [taskInProgress, setTaskInProgress] = useState([]);
   // const [resolveTask,setResolveTask] = useState([]);
   // const [resolvedTaskCount,setResolvedTaskCount] = useState(0);
 
-  useEffect(() => {
+useEffect(() => {
   const loadData = async () => {
     const res = await fetch("./tickets.json");
     const data = await res.json();
 
     setTasks(data);
 
-    const inProgress = data.filter(
-      (item) => item.status === "In Progress"
+    setTaskInProgress(
+      data.filter(t => t.status === "In Progress")
     );
-
-    setTaskInProgress(inProgress);
   };
 
   loadData();
@@ -52,18 +49,20 @@ function App() {
               ></TicketCards>
             </Suspense>
           </div>
-          <div className="col-span-2 border border-blue-500">
+          <div className="col-span-2 ">
             <div>
-              <h2 className="font-semibold text-2xl mb-5"
-              taskInProgress={taskInProgress}
-              setTaskInProgress={setTaskInProgress}
+              <h2 className="font-semibold text-2xl mb-2"
               >Tasks Status</h2>
-              <TaskCard></TaskCard>
+              <TaskStatusCard
+              taskInProgress={taskInProgress}
+              >
+              </TaskStatusCard>
             </div>
             <div>
               <h2 className="font-semibold text-2xl mb-5">Resolved Tasks</h2>
-
-            <ResolveTask></ResolveTask>
+            <ResolvedTask
+            >
+            </ResolvedTask>
             </div>
           </div>
         </div>
