@@ -6,6 +6,7 @@ import TicketCards from "./components/TicketCards";
 import TaskStatusCard from "./components/TaskStatus";
 import ResolvedTask from "./components/ResolvedTask";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -92,6 +93,7 @@ function App() {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
       <ToastContainer
         position="top-right"
